@@ -1,0 +1,72 @@
+.Banner {
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Banner > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5); /* escurece o fundo p/ destacar texto e perfil */
+  z-index: 1;
+}
+
+.Banner .text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  max-width: 90%;
+  margin-bottom: 10%;
+}
+
+.Banner .text img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  margin-bottom: 25px;
+  transition: transform 0.3s;
+}
+
+.Banner .text img:hover {
+  transform: scale(1.05);
+}
+
+.Banner .text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.Banner .text h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #cccccc;
+  margin-top: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .Banner .text img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .Banner .text h1 {
+    font-size: 1.8rem;
+  }
+
+  .Banner .text h2 {
+    font-size: 1.1rem;
+  }
+}

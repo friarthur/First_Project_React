@@ -1,0 +1,35 @@
+.footer {
+  background-color: #172836;
+  color: #a0aec0; /* cinza claro para texto */
+  padding: 25px 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.footer .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0 0 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-social a {
+  margin: 0 15px;
+  color: #a0aec0;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  color: #00aaff; /* azul vivo no hover */
+  transform: scale(1.2);
+  outline: none;
+}
