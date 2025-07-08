@@ -8,7 +8,7 @@ const Footer = () => {
         <p>© 2025 Modup Tecnologia. Todos os direitos reservados.</p>
         <div className="footer-social">
           <a
-            href="https://www.linkedin.com/in/arthurreis"
+            href="www.linkedin.com/in/arthurreism"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
